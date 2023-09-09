@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulce Antojo</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <style>
+        * {
+    
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .containerHeader {
+            background-color: #a22844;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+            margin-top: 5rem;
+            min-width: 30.2rem;
+        }
+        
+        .containerImg {
+            position: absolute;
+            margin-top: -3.7rem;
+            margin-left: 1rem;
+        }
+        
+        .logo {
+            width: 14rem;
+            height: 12rem;
+        }
+        
+        .containerListHeader {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 1rem;
+            padding-left: 12rem;
+        }
+        
+        .menuPrincipal {
+            width: 25rem;
+            height: 2rem;
+            font-size: 20px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .menuPrincipal:hover {
+            color: #badddc;
+        }
+        
+        /*------------------------------------------ Main --------------------------------------------------*/
+        main {
+            background-color: rgb(224, 221, 216);
+            width: 98.9vw;
+            height: 65rem;
+            min-width: 30.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            
+        
+        }
+        
+        .left-section{
+            margin-right: 10px;
+            margin-left: 10px;
+            background-image: url('../image/fondo.jpg');
+            background-size: 90% 100%;
+            width: 50%;
+            height: 60rem
+        }
+        
+        .right-section{
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10px;
+            margin-right: 15px;
+            background-color: white;
+            width: 50%;
+            height: 60rem;
+        }
+        
+        .menu-title {
+            margin-top: 32px;
+            min-width: 10.5rem;
+            max-width: 35rem;
+            display: flex;
+            background-color: rgb(212, 60, 111);
+            width: 40%;
+            height: 8%;
+            border-radius: 20px;
+        }
+        
+        .menu-title2 {
+            background-color: blueviolet;
+            min-width: 10.5rem;
+            max-width: 35rem;
+            display: flex;
+            background-color: rgb(212, 60, 111);
+            width: 40%;
+            height: 8%;
+            border-radius: 20px;
+        }
+        
+        .title {
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto;
+            padding-top: 1rem;
+        }
+        
+        figure {
+            margin-left: 12px;
+            display: flex;
+            flex-direction: row;
+            width: 15%;
+            height: 15%;
+        }
+        
+        .cake {
+            width: 100%;
+            height: 100%;
+        }
+        
+        div {
+            width: 40px;
+            height: 120px;
+            background-color: red;
+        }
+        
+        .small-box {
+            display: flex;
+            width: 100%;
+            height: 35%;
+        
+        }
+        
+        .small-box2{
+            display: flex;
+            width: 100%;
+            height: 30%;
+        
+        }
+        
+        .text {
+            margin-top: 25px;
+            word-wrap: break-word;
+            margin-left: 32px;
+            width: 40%;
+            height: 70%;
+            min-width: 1.5rem;
+            max-width: 65rem;
+            min-height: 10rem;
+        
+        }
+        
+        .figure-imagen-menu {
+            max-width: 15rem;
+            max-height: 30rem;
+            margin-left: auto;
+            display: flex;
+            justify-content: right;
+            width: 30%;
+            height: 90%;
+        }
+        
+        .cake1 {
+            width: 90%;
+            height: 90%;
+        }
+        
+        h2 {
+            margin-top: 12px;
+            font-size: 1vw;
+            font-family: 'arial';
+        }
+        
+        .figure-imagen2-menu {
+            max-width: 15rem;
+            max-height: 30rem;
+            margin-left: auto;
+            display: flex;
+            justify-content: right;
+            width: 40%;
+            height: 90%;
+        }
+        
+        .cake2 {
+            margin-top: -22px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container1 {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            width: 100%;
+            height: 60%;
+        }
+        
+        .container2 {
+            background-color: rgb(200, 40, 93);
+            width: 100%;
+            height: 40%;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        .small-box-img {
+            max-width: 50rem;
+            max-height: 40rem;
+            position: relative;
+            top: -123px;
+            margin: 0 auto;
+            width: 50%;
+            height: 100%;
+        }
+        
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .name-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 95px;
+            width: 60%;
+            height: 40%;
+            text-align: center;
+        }
+        
+        .name {
+            font-family: 'MiFuente';
+            font-size: 3vw;
+            color: rgb(200, 40, 93);
+        }
+        
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('../fuente/Take\ Coffee.ttf');
+        }
+        
+        /*------------------------------------------ Footer --------------------------------------------------*/
+        
+        .containerFooter {
+            padding: 1px;
+            text-align: center;
+            margin-top: 5rem;
+            bottom: 0;
+            min-width: 30.2rem;
+        }
+        
+        .containerSocialMedia {
+            border-top: 4px solid #a22844;
+            border-bottom: 4px solid #a22844;
+            margin-bottom: 1rem;
+            min-width: 30.2rem;
+        }
+        
+        .textContact {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .containerImgFooter {
+            display: flex;
+            flex-wrap: wrap;
+            width: 95vw;
+            margin-top: 1rem;
+            padding-left: 12rem;
+            margin-bottom: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .socialMedia {
+            width: 10rem;
+            height: 8rem;
+            margin: 0.1rem;
+            align-items: center;
+        }
+        
+        .imgFooter {
+            width: 5rem;
+            height: 5rem;
+        }
+        
+        .containerText {
+            background-color: #a22844;
+            height: 8rem;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        .textFooter {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .containerCopy {
+            border-top: 4px solid #a22844;
+            border-bottom: 4px solid #a22844;
+            height: 3rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        
+        .containerCopy small {
+            font-size: 15px;
+        }
+        
+        html {
+            overflow-x: hidden;
+            font-size: 62.5%;
+            list-style: none;
+            min-width: 30.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="containerHeader">
+            <figure class="containerImg">
+                <img src="https://lh3.googleusercontent.com/pw/AIL4fc8iJduK1qVzxUpgxL1dUZRlc6qUOUrYdcm-cA5zE1Q9sxReClzzks_OHOIu0liceEYB_TKuE0CQ42SU4lyFJMne2S4YMgDzR18Em5H691BrAKH4i2_dfcBvx4z8TF0-_JBr_s-TVxYeJiijdUCMHounrOFnQMT0maGpvGT745UBlzGtuZuMujSwm6sXWVPMe56KqWxcoDwxgOolpRdzHG1AYIfQQyD5vov5BC4DEJ17ojjTwMzMLuiN5zQkEigMEQ6pZIc4W_CI-p5VD3PvBjhMq2L1E4B6LgnZ5smFKAcIFY8cX1eH8S2pIXODJoz__-MRAo6a4uRC4O5q9YElW5JO71ExxRq7lbTQ2A53IrbQIlWoBmHkzqBMA2pN7M44M_VGKkqBOTnXKuoV7wEWHwcaayKcUG2sly65oQTlioaIGwkIv5fiSDTe2raDdKYeZLgCrcKT_JrCjCjQvyeaaiMnJAOBc8-p7VENYwiZG_X-eFOhnRKObucbqh5Ncms_uel8lw9bK_CEMtES35dEgm5BeddKtwOuXmyA9tL_RAIC26FY_6DHFvhaUaXZ0B6HV6_tvDK8BjiEbM5kDlaPU9NVVsRNrvdDFe93BVWghcvkQVoZbqcgWogCyjuw7VWCiHSzBRw99YINS-JPlJKiP3Q-gZdEdh0utfp0qF-pYWyPnyanrpwN1KSptjiyUQRqzqD0ZJzVCV3f6f2bAFd0F0lSoHt2vARMNQK4b1cHpVwq-5jecI96FiPx3lH6fPZxQlNFltLPae0aWpuyc8HvA8PAR6fBfDvCCVONL-1CNS5q_WHnxmGHkXCZCoByxM_8J0k_3oty3m9O94LL6QzvfY68BzZ5Cdz7aiEfSnjgWDqiW-83XZrBEuMu3Vx7MBuHaeoWrjfHLMt7G5gRh6z-9g=w500-h500-s-no?authuser=0" alt="Logo de dulce antojo" class="logo" />
+            </figure>
+            <section class="containerListHeader">
+                <h1 class="menuPrincipal">Inicio</h1>
+                <h1 class="menuPrincipal">Promociones</h1>
+                <h1 class="menuPrincipal">¿Quiénes somos?</h1>
+                <h1 class="menuPrincipal">Preguntas Frecuentes</h1>
+                <h1 class="menuPrincipal">Contacto</h1>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="right-section">
+            <section class="container1">
+
+                <section class="name-container">
+                    <h3 class="name">Menu</h3>
+                    <h3 class="name">Dulce Antojo</h3>
+                </section>
+            </section>
+            <section class="container2">
+
+                <figure class="small-box-img">
+                    <img class="image" src="https://lh3.googleusercontent.com/pw/AIL4fc-6tfHkHiKbYImX5DDrlwLOb74TWUmzETtsmpyOrzHFwWvVpyFmO-3HGmWVawznwJivCS1gd5Gb-KxaQuAy2v6b0MwM48XUSXaUtAw__4U-5NnCUo8S0EKgotpcqZAcUo2SMnXZyoTfV29WjB2uiGLUvlu_nAVk8DwXqQUZ6FbR4Z8tv64_N3zDPevPwY4xvpUFfkzgf31qlXFm-Y4RIYRtVpLuecxj1N8KPD5ON936dp7y0zRhIR36qmpjNQ40JHC-xAHHYAag-lG_YMrlqCMrHVUDmrCabWE_0u5_pDZJQBoCRgCntrcSvW1hzBg2vEz7ePAPgy56vWQlsxvmJOLlfb8saNKXdgJVSrmz_U-HpI-EU7-umB2NZ9xTx0UfVjJGgzD4V-hMXUn8qVIavfFXemBFYWOikhd-iq6_1ARQ8k6CuRPvTvrY1P1Q06JOXvE7QoNvtT9OaEnxjrFqs2GgiL7hb64ybKbcjzB0PLXuEGZo0dyDkPlUn9TryoEP9uffRY5aql8SHp9B5i6WBwHMmUYS4W58eCY1lHglm001tGrJqQa28bxc1R2Me2k-uxghaHjY7zmZCT_KRfqgkdglGWvwK67Dh5y-trBOq_4xWlDb-BxOKFB4lFccGJ_IcKaoZpwlOhhhTRqQXYfAEveoao92h6vaGHVHoJfn2XWBxVtoXNyTrZRcUGR1L4nJB7kFAccow_Ssd0bDPH25PFdiwlxocotLi2ggKPlo-qZoEHTV1xH0O2FUym6GHTjUX0qmVPHbGFIms6NksJyHfhsAo35gIcyHpisPojLbzy5KB6j1xwd90pVWhSI-0WHhCPJ1b9xKlKUI4R0Gpfo2Gpf4b6-uYWo2L7PUzaUBgbvNic9-iZzuM6IJrPNBmjJnVujhR2VSJj0Ij4T_44s_LA=w564-h415-s-no?authuser=0" alt="">
+                </figure>
+            </section>
+        </section>
+        <section class="left-section">
+            <section class="container-img-cake">
+                <figure>
+                    <img class="cake" src="https://lh3.googleusercontent.com/pw/AIL4fc8eNeACeNNr9sfuw_JX03ZT3Ulx7C8Xfv8sObPWNQdlBKY0A2At4nL4KkhFHwC56bIFoWYxUTuWAGmQJL4SlbcMgm1K6YR9L6GQXpIXDyBq4ui5r9fWgkhgifTvjwJ_F08C1LJNLuDppczC2tZk81aBQOnEIP6yUkBRzJU5TmB0wZDcpntJBGDpSVXQUNHH_LukZ0R3ZgNijsKdMBaNPma6sh0nTHP5FVMlguJg8eRPK1lcd2WRJzM75FJlj8cYwB23QZ_XNOhvKfzD8XXa1vTh9xC9CK9rKw-ANiQC4jpG2c1f1Iq9KgjeVysK7PuQDBWy6FD4q8kHlQ72lJFgizyBDHMME0Fl-Vr2g6IdGqOkGkbEivNFN1mrfGmO5EiriGhSe8JWAC82xfwAr6WH7x-Ywjz6oCaFr1DcrJzDdhko5dVyCd1yCVu591X9IR5OcQmw0GcNX9AZgxxHkZR9fUCCj3PaEjwFZ2nwKvCNAby3FuUOKAJjwGPkSfOPF-QTvGpMIGF0sj9-2mYFMT-oqh131RwQqX7d4DBuAyCB9IPAxDqzoBpK0Ml5l5eqMb3I88A00jfLq95E4kjwsNAYSJWmrjGdH83oKGv0ouLHZNys-MbkhOMbrSF5WVG2-amE9JvyQ7QEFX99VUNYK8Q_1j3LDqp-nNDC3r2v44B2o51w5ld29d9sPXJhoUUoFv-fc24ZyuWjKrY1tuoi8WYtLM_QeQBCM-O7LhUYoe0-KMyMo1nkUAowT2jrwAzN6F555rZ7pbHil1tV1LY4yvVgFCUOt_RRFMJpW1tX0cwckugErS4QTh8Wks8_YfmPewqyYLRjWjmwofBjnusMZPVUvYxj1Q1BAXeqZViQ5pmhSLY7RtA06-JrU4Jyj0pYTHduEPX4JmzH92xyyqC2jmoRCw=w703-h355-s-no?authuser=0"
+                        alt="Pastelitos adornando en la parte superior">
+                    <img class="cake" src="https://lh3.googleusercontent.com/pw/AIL4fc8eNeACeNNr9sfuw_JX03ZT3Ulx7C8Xfv8sObPWNQdlBKY0A2At4nL4KkhFHwC56bIFoWYxUTuWAGmQJL4SlbcMgm1K6YR9L6GQXpIXDyBq4ui5r9fWgkhgifTvjwJ_F08C1LJNLuDppczC2tZk81aBQOnEIP6yUkBRzJU5TmB0wZDcpntJBGDpSVXQUNHH_LukZ0R3ZgNijsKdMBaNPma6sh0nTHP5FVMlguJg8eRPK1lcd2WRJzM75FJlj8cYwB23QZ_XNOhvKfzD8XXa1vTh9xC9CK9rKw-ANiQC4jpG2c1f1Iq9KgjeVysK7PuQDBWy6FD4q8kHlQ72lJFgizyBDHMME0Fl-Vr2g6IdGqOkGkbEivNFN1mrfGmO5EiriGhSe8JWAC82xfwAr6WH7x-Ywjz6oCaFr1DcrJzDdhko5dVyCd1yCVu591X9IR5OcQmw0GcNX9AZgxxHkZR9fUCCj3PaEjwFZ2nwKvCNAby3FuUOKAJjwGPkSfOPF-QTvGpMIGF0sj9-2mYFMT-oqh131RwQqX7d4DBuAyCB9IPAxDqzoBpK0Ml5l5eqMb3I88A00jfLq95E4kjwsNAYSJWmrjGdH83oKGv0ouLHZNys-MbkhOMbrSF5WVG2-amE9JvyQ7QEFX99VUNYK8Q_1j3LDqp-nNDC3r2v44B2o51w5ld29d9sPXJhoUUoFv-fc24ZyuWjKrY1tuoi8WYtLM_QeQBCM-O7LhUYoe0-KMyMo1nkUAowT2jrwAzN6F555rZ7pbHil1tV1LY4yvVgFCUOt_RRFMJpW1tX0cwckugErS4QTh8Wks8_YfmPewqyYLRjWjmwofBjnusMZPVUvYxj1Q1BAXeqZViQ5pmhSLY7RtA06-JrU4Jyj0pYTHduEPX4JmzH92xyyqC2jmoRCw=w703-h355-s-no?authuser=0"
+                        alt="Pastelitos adornando en la parte superior">
+                    <img class="cake" src="https://lh3.googleusercontent.com/pw/AIL4fc8eNeACeNNr9sfuw_JX03ZT3Ulx7C8Xfv8sObPWNQdlBKY0A2At4nL4KkhFHwC56bIFoWYxUTuWAGmQJL4SlbcMgm1K6YR9L6GQXpIXDyBq4ui5r9fWgkhgifTvjwJ_F08C1LJNLuDppczC2tZk81aBQOnEIP6yUkBRzJU5TmB0wZDcpntJBGDpSVXQUNHH_LukZ0R3ZgNijsKdMBaNPma6sh0nTHP5FVMlguJg8eRPK1lcd2WRJzM75FJlj8cYwB23QZ_XNOhvKfzD8XXa1vTh9xC9CK9rKw-ANiQC4jpG2c1f1Iq9KgjeVysK7PuQDBWy6FD4q8kHlQ72lJFgizyBDHMME0Fl-Vr2g6IdGqOkGkbEivNFN1mrfGmO5EiriGhSe8JWAC82xfwAr6WH7x-Ywjz6oCaFr1DcrJzDdhko5dVyCd1yCVu591X9IR5OcQmw0GcNX9AZgxxHkZR9fUCCj3PaEjwFZ2nwKvCNAby3FuUOKAJjwGPkSfOPF-QTvGpMIGF0sj9-2mYFMT-oqh131RwQqX7d4DBuAyCB9IPAxDqzoBpK0Ml5l5eqMb3I88A00jfLq95E4kjwsNAYSJWmrjGdH83oKGv0ouLHZNys-MbkhOMbrSF5WVG2-amE9JvyQ7QEFX99VUNYK8Q_1j3LDqp-nNDC3r2v44B2o51w5ld29d9sPXJhoUUoFv-fc24ZyuWjKrY1tuoi8WYtLM_QeQBCM-O7LhUYoe0-KMyMo1nkUAowT2jrwAzN6F555rZ7pbHil1tV1LY4yvVgFCUOt_RRFMJpW1tX0cwckugErS4QTh8Wks8_YfmPewqyYLRjWjmwofBjnusMZPVUvYxj1Q1BAXeqZViQ5pmhSLY7RtA06-JrU4Jyj0pYTHduEPX4JmzH92xyyqC2jmoRCw=w703-h355-s-no?authuser=0"
+                        alt="Pastelitos adornando en la parte superior">
+                    <img class="cake" src="https://lh3.googleusercontent.com/pw/AIL4fc8eNeACeNNr9sfuw_JX03ZT3Ulx7C8Xfv8sObPWNQdlBKY0A2At4nL4KkhFHwC56bIFoWYxUTuWAGmQJL4SlbcMgm1K6YR9L6GQXpIXDyBq4ui5r9fWgkhgifTvjwJ_F08C1LJNLuDppczC2tZk81aBQOnEIP6yUkBRzJU5TmB0wZDcpntJBGDpSVXQUNHH_LukZ0R3ZgNijsKdMBaNPma6sh0nTHP5FVMlguJg8eRPK1lcd2WRJzM75FJlj8cYwB23QZ_XNOhvKfzD8XXa1vTh9xC9CK9rKw-ANiQC4jpG2c1f1Iq9KgjeVysK7PuQDBWy6FD4q8kHlQ72lJFgizyBDHMME0Fl-Vr2g6IdGqOkGkbEivNFN1mrfGmO5EiriGhSe8JWAC82xfwAr6WH7x-Ywjz6oCaFr1DcrJzDdhko5dVyCd1yCVu591X9IR5OcQmw0GcNX9AZgxxHkZR9fUCCj3PaEjwFZ2nwKvCNAby3FuUOKAJjwGPkSfOPF-QTvGpMIGF0sj9-2mYFMT-oqh131RwQqX7d4DBuAyCB9IPAxDqzoBpK0Ml5l5eqMb3I88A00jfLq95E4kjwsNAYSJWmrjGdH83oKGv0ouLHZNys-MbkhOMbrSF5WVG2-amE9JvyQ7QEFX99VUNYK8Q_1j3LDqp-nNDC3r2v44B2o51w5ld29d9sPXJhoUUoFv-fc24ZyuWjKrY1tuoi8WYtLM_QeQBCM-O7LhUYoe0-KMyMo1nkUAowT2jrwAzN6F555rZ7pbHil1tV1LY4yvVgFCUOt_RRFMJpW1tX0cwckugErS4QTh8Wks8_YfmPewqyYLRjWjmwofBjnusMZPVUvYxj1Q1BAXeqZViQ5pmhSLY7RtA06-JrU4Jyj0pYTHduEPX4JmzH92xyyqC2jmoRCw=w703-h355-s-no?authuser=0"
+                        alt="Pastelitos adornando en la parte superior">
+                    <img class="cake" src="https://lh3.googleusercontent.com/pw/AIL4fc8eNeACeNNr9sfuw_JX03ZT3Ulx7C8Xfv8sObPWNQdlBKY0A2At4nL4KkhFHwC56bIFoWYxUTuWAGmQJL4SlbcMgm1K6YR9L6GQXpIXDyBq4ui5r9fWgkhgifTvjwJ_F08C1LJNLuDppczC2tZk81aBQOnEIP6yUkBRzJU5TmB0wZDcpntJBGDpSVXQUNHH_LukZ0R3ZgNijsKdMBaNPma6sh0nTHP5FVMlguJg8eRPK1lcd2WRJzM75FJlj8cYwB23QZ_XNOhvKfzD8XXa1vTh9xC9CK9rKw-ANiQC4jpG2c1f1Iq9KgjeVysK7PuQDBWy6FD4q8kHlQ72lJFgizyBDHMME0Fl-Vr2g6IdGqOkGkbEivNFN1mrfGmO5EiriGhSe8JWAC82xfwAr6WH7x-Ywjz6oCaFr1DcrJzDdhko5dVyCd1yCVu591X9IR5OcQmw0GcNX9AZgxxHkZR9fUCCj3PaEjwFZ2nwKvCNAby3FuUOKAJjwGPkSfOPF-QTvGpMIGF0sj9-2mYFMT-oqh131RwQqX7d4DBuAyCB9IPAxDqzoBpK0Ml5l5eqMb3I88A00jfLq95E4kjwsNAYSJWmrjGdH83oKGv0ouLHZNys-MbkhOMbrSF5WVG2-amE9JvyQ7QEFX99VUNYK8Q_1j3LDqp-nNDC3r2v44B2o51w5ld29d9sPXJhoUUoFv-fc24ZyuWjKrY1tuoi8WYtLM_QeQBCM-O7LhUYoe0-KMyMo1nkUAowT2jrwAzN6F555rZ7pbHil1tV1LY4yvVgFCUOt_RRFMJpW1tX0cwckugErS4QTh8Wks8_YfmPewqyYLRjWjmwofBjnusMZPVUvYxj1Q1BAXeqZViQ5pmhSLY7RtA06-JrU4Jyj0pYTHduEPX4JmzH92xyyqC2jmoRCw=w703-h355-s-no?authuser=0"
+                        alt="Pastelitos adornando en la parte superior">
+                    <img class="cake" src="https://lh3.googleusercontent.com/pw/AIL4fc8eNeACeNNr9sfuw_JX03ZT3Ulx7C8Xfv8sObPWNQdlBKY0A2At4nL4KkhFHwC56bIFoWYxUTuWAGmQJL4SlbcMgm1K6YR9L6GQXpIXDyBq4ui5r9fWgkhgifTvjwJ_F08C1LJNLuDppczC2tZk81aBQOnEIP6yUkBRzJU5TmB0wZDcpntJBGDpSVXQUNHH_LukZ0R3ZgNijsKdMBaNPma6sh0nTHP5FVMlguJg8eRPK1lcd2WRJzM75FJlj8cYwB23QZ_XNOhvKfzD8XXa1vTh9xC9CK9rKw-ANiQC4jpG2c1f1Iq9KgjeVysK7PuQDBWy6FD4q8kHlQ72lJFgizyBDHMME0Fl-Vr2g6IdGqOkGkbEivNFN1mrfGmO5EiriGhSe8JWAC82xfwAr6WH7x-Ywjz6oCaFr1DcrJzDdhko5dVyCd1yCVu591X9IR5OcQmw0GcNX9AZgxxHkZR9fUCCj3PaEjwFZ2nwKvCNAby3FuUOKAJjwGPkSfOPF-QTvGpMIGF0sj9-2mYFMT-oqh131RwQqX7d4DBuAyCB9IPAxDqzoBpK0Ml5l5eqMb3I88A00jfLq95E4kjwsNAYSJWmrjGdH83oKGv0ouLHZNys-MbkhOMbrSF5WVG2-amE9JvyQ7QEFX99VUNYK8Q_1j3LDqp-nNDC3r2v44B2o51w5ld29d9sPXJhoUUoFv-fc24ZyuWjKrY1tuoi8WYtLM_QeQBCM-O7LhUYoe0-KMyMo1nkUAowT2jrwAzN6F555rZ7pbHil1tV1LY4yvVgFCUOt_RRFMJpW1tX0cwckugErS4QTh8Wks8_YfmPewqyYLRjWjmwofBjnusMZPVUvYxj1Q1BAXeqZViQ5pmhSLY7RtA06-JrU4Jyj0pYTHduEPX4JmzH92xyyqC2jmoRCw=w703-h355-s-no?authuser=0"
+                        alt="Pastelitos adornando en la parte superior">
+                </figure>
+            </section>
+            <section class="menu-title">
+                <h1 class="title">~cookyes~</h1>
+            </section>
+            <section class="small-box">
+                <section class="text">
+                    <h2>Dark Chocolate...............C$125</h2>
+                    <h2>Pink Princess Cake........C$80</h2>
+                    <h2>Sweet Vanilla..................C$90</h2>
+                    <h2>Banana Pudding............C$120</h2>
+                </section>
+                <figure class="figure-imagen-menu">
+                    <img class="cake1" src="https://lh3.googleusercontent.com/pw/AIL4fc_iTDu-7s7kvUccgIaL3qhVGv1JjSM1vF3L8GAJ_3dHN_zHGyGFScI6pdm-66TADPIXC9hq-1u-okjXbNu8jEzGBmgReIxluKLeYzP-WX32wmrLH5csHVQQaDFxjq8gGDUbDncXVrQ-ML_XopUKuA8CNLiQVm25QUeqRmluWTNemDocm2TyiAew5ebF_NQiDovtBd3Ot4s1ekNLmP4FNMEIsmODx9gwHtK1mKwIm9rByRKvjLH28fo4juJtYp7dRzHf3u74-cJmjsIOdUcA8LaZF-JfdwHG8hGPb7hANoYaWb97FXDennhG_er5wBUVU18Bvg-1Q6dKtKOmTZM-0CrwqnK2YLWuhASGBbN0AEGPoJuJKrKUe5YJh1nXfHhaqKhDrMAvLZuEFyrqqFfJKlcLk3giJy5o2z5K8I20-b6SpB879NuWAHTnrvP7vGQs9-JOc9NhiakTkVxP8kvUGpUmoeZDA8PpjvVwfvafvL4zbx3b2ACb0zbE0zy_7IEyuv5b1SaLU31zpy3t6uL5vZ2tvna9bbkMohcS2nlDlPpvFvf85SQL0lA3vCZdUSu2vsCaj4W-TkfoWFgqHZCVJ2IBgXSlevYGsTL6ZO-wp8J9wLlvhgAVMJ9MJWWBdaEAgO9U0CGKm2wK4ob1kYn76HhkWxXkiMS2PwCOeTktFwxIKwW3w38ZfoIhCGelHx7LVyOuxlIreNECdDGTbfxfGEhW6zmAmkAwVqJdxYQIVYpj0ELTi_5c6MJjAyqyFosYwNTZTnYtGDhkK31wd7VDIDdy0kTDtTIFRQJzZd1IpXKxvoOCXov-lMIUXKtyBTczf3cczVXAmLcKGzOnlJpqjbWne4PJ6tNbMJpbU4K6OzRgvYnQZZssNlSCYPGYOHc-ZQAA-Ro2B-Tj_KxQXKojQA=w443-h564-s-no?authuser=0" alt="">
+                </figure>
+            </section>
+            <section class="menu-title">
+                <h1 class="title">~Desserts~</h1>
+            </section>
+            <section class="small-box2">
+                <section class="text">
+                    <h2>Dark Chocolate...............C$25</h2>
+                    <h2>Pink Princess Cake........C$45</h2>
+                    <h2>Sweet Vanilla...................C$60</h2>
+                    <h2>Banana Pudding.............C$125</h2>
+                </section>
+                <figure class="figure-imagen2-menu">
+                    <img class="cake2" src="https://lh3.googleusercontent.com/pw/AIL4fc9d2LVWyob1PiGCmKe4WTqFBDyu8rfyRK10RXVlpmOnmpTnkFFdcS82FtEZipn5m1V5iQWpWdw15ceodYIOkhHvx4bjYkw7AcqDX4EOwAJe3GCRVCOJlvGm5_6RD-4L3yCKtLer5AX1mwnCPyCKqLdy7YocnqTGj6chi31IXo2B3vYf4tnidf2yEthc0uPs8dPzNFOHpBIIl8kqqz8EoAVqraeq73nNaOEVdqXlhRxmiMuqyCiZfzlL1jcLeRbC22JpGAs1fX_13nNiCZKpIeuA1aIQKiYxrpE3zGH26BR8x07sQLlbN_1QGVR9GYe-aLD2xg7znZX9bZlJngwzLXJCFgNfMMo-fvzJxDrVGSSg-XgxWuBm2an-ZTrXusvWrTiaSCFCCpRk9Zc8zn6XTV7RJqm_4CFWsDLX0EuiWmLrTMKTB2hdBYrm1O41ijSpI8gmARNL0DGsmr2xRLN9qrD1QF-l-jWOYlP57x9tfAqmDIPGaRP5dDkBu1U2Vn1zZliAD5xh8rEwTePn_0izQ6D-7iEwhxoF9uv_km_F84ZmzPnsLqeZwINNSWXFWT0KQGYgVsQFUi06yyK3hKr6heSG3t5CjIpuOOxJG0BZlCgYxoOzGasks5HnTTJsW5QpeVbL5JYB3xCBb4j3BGRg15snsiwtKDbl_tW1AzNQ2ip3k8ucX_1EeoKUbtUA6qNO6mQnj9WbuDP1ld0t1cWOFfOLdbqddkf_6MUG7JwR2TBAupvEhpGb_OSZDladVEkAA0EuL6M0qYwGHyT9kZYj5v51HjIqmiA9JOc8mLFQhcIKfdjEGN5Kw4EswxUCIvmIGWVy7k7TEbil3P5zZvd2NUeVeCrXVpF9LOYJnyY26TikRzXeVSnEZuD9A1yNJ5Iqnv2aqsPrI-oMQGqNeh0_jQ=w387-h580-s-no?authuser=0" alt="">
+                </figure>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="containerFooter">
+            <section class="containerSocialMedia">
+                <h1 class="textContact">CONTACTO</h1>
+                <figure class="containerImgFooter">
+                    <a href="#" class="socialMedia"><img src="https://lh3.googleusercontent.com/pw/AIL4fc9tuSjiQRK7Hlta8F9PyZNIEfdueeyJa2V4wlnfIP1MjBRoZHy1BIoq2aSysoz-QZwPN3S6HTKf1rBXOwHOruIvK5LFb-fLdo2iSpKMdek4AVqKPQ9yQdDxAYsAc9FTddTx4Ktujpfoj_aI-keqL6PrcKvS15pKZ6SxzkyADt-QLg2d26bHlM4-rjZREk1fOM-qNd6fF7jGkm6cAJFiNrCzB0hQyKryZZCZvjUWRDnmh8jyd0CFiIwU6K8ggjsjYgWMUtgBHchpiyiS0woEHyM8wBmOxZq9qWfe33LfAMZAJND5NBfV0qyit_B_dbTmyXG7uOPhBDb0ughET1n6h_8Ft2s9wGsHYWlwtiqD_-NIiPwgg58SKqfNIJulL7ORoht3cnVP4tBw7Y8CQIrCLnxTfwL7vtsZpnp2SVZhWPq0_3VvBBuYWatHtORixcIt3dE6OEhunsZimTmV74advGrjKYDlEy-MgZjXZX14dh_X1YWhRmx8HEi0nt_pIdEYfJt3oHdpZGktuJgtgP7A2VLtIH6_G0DQPXlZpkGeYSYATFOmWJY2lytFLHSaPDBiAfU0dFLDJ5qVZ37HK9duSDPhDRIu4Hss-LcUXDTgUTYz7axKWjT-Ozxn14Gd1GY_FdeiD-d5SQbUV3ysiOQsO2hpLTfrMTPPHBIH1YZIPi6J9lmGTkI7OvTasWUUmiNfB8z5H1DZWHEsmuzlRSw7l7tzV3tUzSZxIRXBEuF8NDZz1Vk5nLkatVbgwN-g4yc_AO-KeuvA5reCG0N1bZt8BwoW2GPeC2n9c2O61IhKIW0W5B91gmyAIuTn2nSbCwwosv9nwJL1KT1df0Dq_N6_XOPcpgljEG_Ig8m6kG3RCoMciUE1V6NbuTM4j5d0Q9cgnk2YbEIslFPQQO3AS9ONLg=w512-h512-s-no?authuser=0" alt="logo de facebook"
+                            class="imgFooter"></a>
+                    <a href="#" class="socialMedia"><img src="https://lh3.googleusercontent.com/pw/AIL4fc8G3DDjlM9Q_ic42v8kNgGbO7wWNyy8bTwudHXhv0tsvaaPQ_JBASSbfWxUw7eU15o2Ui4ireo0mLBx2RIt5rhPooa6DQdNRaS43aNgooxW7xeEP-paapYTyF6Pm6n5_RfWfU0JLn1GzZMz0nBmqC2z-4XnPuo1fVNUmpxkB5hKOLZ-7CnsJJKj-fpi_I46Ox0RZpZH7kMlGXtE19KrF_0fiZuZNSpOaIrDoAfDNMlYylAlMSB8OWjrlghr6XZAwPwny0J_DpLkn-vNX-R-p-ggIdr8dKJd_lY_rDLIdjeksodTpJaHjExewcT4lepZqWYTXtlpjJC58-PqB_j3clQ2ImIuEkccUQCDqJxRB0niRhsRdF6F5tyM_243SyLUNWSY5aNA1CLrenYscD4o_zMzAm65ah3XRtBbEu4GuPh1-VcggBtRWmC1f7daS2GqrvZoo1LbTXNfjix0g3Vu0Q51itsHPAzENpbnLgJ4cgLQS2LCBzJr48ov85y3qohzUKHOdL1IVVIU-F7ol9mEorIsaQrzL2oyot32xd75npXTK0CnUznaUNCK7B_cEQsMM1SUcMtuq7mJ1NITaTrprbXQL3mQdT_nnjhW_THlksJGTOEKHZtyyIejnsSIcP1xMuhj-4juydk9X5WvMQ3zLGelv6ad48Ki0ow5s3bFLh_1yXMcTPVo7RV6FxBTrz8pgLf8yTQQAREHzdLxl-PZ4F5hBcDi6wBhvscqtpqMadIP7_RjYxwO3zO0f2lDBVfV7aoS7h1I3xhrJPx-dr3vgpqVAgTAiQwTpKOPGZUlmjP4LZoVgXEWja1GP45U-dpXYQzY77VrfTwSVm_Y9NB4RmR2KWMb01Pa_V7-gP2Fv9DS2TJ9SC9Ll9MW_ns_SyWm5x4H4p_YMUC2kqSu5BmG9Q=w512-h512-s-no?authuser=0"
+                            alt="logo de instagram" class="imgFooter"></a>
+                    <a href="#" class="socialMedia"><img src="https://lh3.googleusercontent.com/pw/AIL4fc_a8GJIdstybminwEo1ms-RJr7ATwwG3AAR5UlK_5a-yRkCliiSzMbtqzmfRMOt4v9AmV0aUtV3i_PTajL3o-lxTJWinXVE7mN35nm5_zgMHJH3JtF1mGQpIvPE6GPXxrTzbtoiyyrIwbZvbSFDtjPno9nIUJ2YF-lssZolpMLN5y4G_-u52xAXI1njOyG1FWF94DJKnf-gkzBmPBAn9uJmFxzd3IcVufeGsKdLskmRYp0SsRz7eIVwJdwPzfkVyceiSwQS6Mh5JyO0Mwl0VBt-Hb2xY_t20r7uU6Gmyk0Ooh1z8XK3Th9Uu1y0z-FK0EulAOYbV0AcO0jNIPY2oRi8nkob06pqmq1Vf_dsqd3MXE1P8Sh-n52jcjoi5D_E1bgkJTbU0ZmreK8dJEfcDAMXPii95NomJpljv4g2kytGXs1XOWZFy_p3JL9WgLBRr_gSpuIBmcwLFTob8PxLS4fubzJ2dB1RCi3Mh-Ak2fEjr28LsaNOEfSykO25WN0S8Siz5HA_NFo7wPCiT5BQWct7Es46oleyCvhZn7C77mMIES9yAy_Drc7oU3MgFO23eQ-lLwjTPCY0m15lC39f6fMjsVwF_4f4NbNRYYMAptlmfZ-41YBiBjAfZhvZTmCo0lZ-1Q3TouN0qQ5XLp2nAZj64j029hgsmE44hgHduVQ3SOt6KNhJYLxUqNMq5GtgeD0kJrRZsZoiAmTr9gzSQM_B-GyCdio7DCef5kFhKI1VTLZT-Mu7tdoRMxg3qLCGMO8iuwUDfvkmx028etcVMuRMMCTR0umi2n-uR5C0Kru8nmOCtFp_FoMznemtE_Wizh7ArFsoKILotecZ-OeeIJJq_6Z0MsNK7-2T88AwY_IA17ae7WhA0xa3xcet1YGCFfEwZ-QiWUAgbgxx6Cdotw=w512-h512-s-no?authuser=0" alt="logo de telefono"
+                            class="imgFooter"></a>
+                    <a href="#" class="socialMedia"><img src="https://lh3.googleusercontent.com/pw/AIL4fc_6HoqeBKZgBxzpq4CUku0V3bojjHmbxs5LUj81u8O1Mk8bNuOSOB-x7rEinEH3XpD11lWC8D_PwYVFwhMXqZiXQMu9FKcIkhwNXx5Tk-JJcE9u8i7dDmayMs05vm1-mSqg0tIh09qYyZGuEi1HbKpplAkPijh-vDxKdRsJ5DfS0dMhA1vKQVorDf2ieVmq71Lzhq8IhuuQLlwdxs2fc4GWfzTr0j9CPE-JiY0ZJ-ZoEo5F9CtXYKBgCE4jZ-o0JQjD21cjbEQD1xRJYjiq3TgtocEiBeRlsdDIMGLT8TalL6OCjIIE586l6dyE8912teB2Xzx9njXtzysnDnq1Jhk196KcNHMwFXp1LIArT5ymcUEydJfEeP1lzHXQ4zHVeok9OmzhrTFpZ14e8Qwdefm73bP8bnx-CL60uatD59VqrezvBhLtjgju7lMKOLozi1lyIBh3aAmkrDhkUaoHGvG0YTURtF55fzKUsnIr0bAwOvs0ICTlX2KvUn5XgiOUpjri0mTmsAEyj5SiazH6hcFl3pdVJQl2pfLa0GcOuxz7VwGLsToiTbDLgLpO7djxeacWZ6kALg3ZPGkybBk89nTW8mCE_fsDwwQFhfB5y08Jeau6GkM0-6SEc3NvfovkE6oAheuhKHCkUH47-0Tz0BM8QLMH1un-nJtUmGXQGRMPHNU0TSadCk7tgdbvvBwusuxHlndD956t9BQLG-5AvLd7IwlvwePRNnsNOtfwEAnRria0LXSn2x-kCIZ2hVCJRy6blpRQzsV4iODc9dgUa44gSU7YB4x4d8v16TqmYZuwmEtO9j4Ym7Klb-BCtdk6So5YVH6znigd12Iu9YpBC6fiQu6w7FkEvxKYc6S0KPhtBe-PlP1AtPQVZQIpS_Ig_xxVtcefYIw4x6BR2POG_A=w512-h512-s-no?authuser=0" alt="logo de twiter"
+                            class="imgFooter"></a>
+                    <a href="#" class="socialMedia"><img src="https://lh3.googleusercontent.com/pw/AIL4fc-walZkxrOyG8d0eWapv6WobRmAamDrmZowhDsGHxRrY2nsU7_jv3B5WJkCtPwaUkIOVM50GvJHgyKmbXNSf5OkjIwieBrzDMnP303cdKQtUTpCwzzJkdd2SAHMm0a0fEt-kxyP5FvGowcEnTIkIJJ2Gwxi0Yrb_Qp_3v7cxj0WcAWDVllOaRgxdtvyIeb--LhwPhIxnGA7GThhAUFvXEBV3dQXkfvB94FqR176mj6HyIJ9f5PJNLK9ut__q1mhMlyNjWB12erQF52-9KfKuO9LpMGe-gMvL4H5NVlHHoYzNutMsj3Ap-VReiiUJQf8eFz6lULpLvx2gCnG330Xz1YdRNMdptVBAJXzE2_ak0icWeL76D58-jhWC2dS6iwZERM0hp_hYReB0IBjXzBZ7o8Mdj5jcnUqdhocWqMic1IbW7716Wkt1WdQY2elS1C9RJ3d-tjqwhiqhjX0HVqxsJMHgrX2AS0uyt4p7r3D6V3431bsoRwL-y04cbetE1n13_xejKQRBOEUNsk3BBI48XJE5xS14Cv5RvCOoers4hTuixM3kxam0I4rZ7MkiYZ5jHok3T1DL-ACkEAZWhBYoQPFKeYWMisJ_uGKoSlFXxQuk6ToE07e8o30R8nWViX7EVqIpX8McuGDYETSxnp9tjuCYPyZ5YIqfIZReCiUPVGvHDFm8SEe03dqcGFs2Vw2SUosY2E2tjCWKV5l-v-y3QBp4m3yaMoqn9t7S0Uk7ua-zsmSMedhnwdk74oGloMfH-LDD4As-nnyDMGgLfoljJ_V8UQ8800i7IJ78qM-LPxCnLMIxGMKIWnyXUAPWwZyZLXiWtqcG2zru8pcCNhIxYeQZ0BfcYnB2Ayllz41_4EMBJacsGaxqSaJh8-Ub6xelI0IkRtlHmZvHPl555O-1Q=w512-h512-s-no?authuser=0" alt="logo de whatsapp"
+                            class="imgFooter"></a>
+                </figure>
+            </section>
+
+            <section class="containerText">
+                <p class="textFooter">
+                    "Dulce antojo es una tienda online en donde se ofrecen diversos
+                    postres para que las personas que sufren de diabetes en Nicaragua
+                    vuelvan a disfrutar de postres sin que estos afecten a su salud,
+                    brindándoles siempre precios accesibles, buen sabor en nuestros
+                    productos, garantía de higiene y calidad"
+                </p>
+            </section>
+
+            <section class="containerCopy">
+                <small>&copy; 2023 <b>Dulce Antojo</b> - Todos Los Derechos
+                    Reservados</small>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
